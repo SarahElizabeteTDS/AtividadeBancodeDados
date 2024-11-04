@@ -26,5 +26,6 @@ CREATE TABLE Livros
     FOREIGN KEY (id_categoria) REFERENCES Categorias(id)
 );
 
+--resposta da 2
 ALTER TABLE Categorias
 ADD COLUMN quantidade INT;
