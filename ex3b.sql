@@ -26,8 +26,7 @@ CREATE TABLE Livros
     FOREIGN KEY (id_categoria) REFERENCES Categorias(id)
 );
 
-ALTER TABLE Categorias
-ADD COLUMN quantidade INT;
+ALTER TABLE Categorias ADD COLUMN quantidade INT;
 
 INSERT INTO Autores (id, nome, nacionalidade) VALUES
 (1, 'Machado de Assis', 'Brasileiro'),
@@ -44,6 +43,7 @@ INSERT INTO Livros (id, titulo, ano_publicacao, id_autor, id_categoria, preco) V
 (2, 'Capitães da Areia', 1937, 2, 2, 32.96),
 (3, 'Querida', 2009, 3, 3, 34.00);
 
+--resposta da 3.b
 INSERT INTO Autores (id, nome, nacionalidade) VALUES (4, 'Graciliano Ramos', 'Brasileiro');
 
 INSERT INTO Livros (id, titulo, ano_publicacao, id_autor, id_categoria, preco) VALUES
