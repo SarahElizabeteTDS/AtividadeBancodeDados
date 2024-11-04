@@ -27,5 +27,4 @@ CREATE TABLE Livros
 );
 
 --resposta da 2
-ALTER TABLE Categorias
-ADD COLUMN quantidade INT;
+ALTER TABLE Categorias ADD COLUMN quantidade INT;
