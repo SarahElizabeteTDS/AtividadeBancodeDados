@@ -21,7 +21,7 @@ CREATE TABLE Livros
     ano_publicacao YEAR,
     id_autor INT,
     id_categoria INT,
-    preco DECIMAL(5,2),
+    preco FLOAT(5,2),
     FOREIGN KEY (id_autor) REFERENCES Autores(id),
     FOREIGN KEY (id_categoria) REFERENCES Categorias(id)
 );
