@@ -21,7 +21,7 @@ CREATE TABLE Livros
     ano_publicacao YEAR,
     id_autor INT,
     id_categoria INT,
-    preco DECIMAL(5,2),
+    preco FLOAT,
     FOREIGN KEY (id_autor) REFERENCES Autores(id),
     FOREIGN KEY (id_categoria) REFERENCES Categorias(id)
 );
@@ -53,4 +53,4 @@ UPDATE Categorias SET descricao = 'Romance' WHERE id = 1;
 UPDATE Livros SET preco = preco * 1.10 WHERE ano_publicacao < 2000;
 
 --resposta da 4.c
-UPDATE Autores SET nome = 'Gabriel García Márquez' WHERE nome = 'Graciliano Ramos';
+UPDATE Autores SET nome = 'Gabriel García Márquez' WHERE nome = NULL;
