@@ -26,8 +26,7 @@ CREATE TABLE Livros
     FOREIGN KEY (id_categoria) REFERENCES Categorias(id)
 );
 
-ALTER TABLE Categorias
-ADD COLUMN quantidade INT;
+ALTER TABLE Categorias ADD COLUMN quantidade INT;
 
 INSERT INTO Autores (id, nome, nacionalidade) VALUES
 (1, 'Machado de Assis', 'Brasileiro'),
