@@ -18,7 +18,7 @@ CREATE TABLE Livros
 (
     id INT PRIMARY KEY,
     titulo VARCHAR(100),
-    ano_publicacao YEAR,
+    ano_publicacao INT,
     id_autor INT,
     id_categoria INT,
     preco FLOAT(5,2),
